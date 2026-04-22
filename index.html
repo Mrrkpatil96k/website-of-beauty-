@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GlowUp Lipstick Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            display: flex; /* for vertical nav layout */
+        }
+
+        /* Vertical navigation bar */
+        nav {
+            width: 200px;
+            background-color: #f8cde4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            height: 100vh;
+            position: fixed;
+        }
+
+        nav a {
+            margin: 15px 0;
+            text-decoration: none;
+            color: #800040;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Main content next to vertical nav */
+        main {
+            margin-left: 200px;
+            width: calc(100% - 200px);
+        }
+
+        header {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 90px;
+            display: block;
+            margin: auto;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #800040;
+        }
+
+        .logos img {
+            width: 100px;
+            margin: 15px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background-color: white;
+            width: 220px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 280px;
+            border-radius: 10px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- VERTICAL NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#brands">Brands</a>
+        <a href="#products">Lipsticks</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <header>
+            <img src="C:\Users\upase\Downloads\lip.jpg" alt="Logo">
+            <h1>GlowUp Lipstick Store 💄</h1>
+            <p>Bold Lips. Bold You.</p>
+        </header>
+
+        <!-- BANNER -->
+        <div class="banner">
+            <img src="C:\Users\upase\Downloads\lip.jpg" alt="Banner">
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Our Lipsticks</h2>
+
+            <p style="text-align:center; max-width:800px; margin:auto; line-height:1.8;">
+                <b style="color:#d63384;">GlowUp Lipstick Store</b> is dedicated to providing
+                premium quality lipsticks that enhance natural beauty and confidence.
+                Our products are designed for every skin tone and personality.
+            </p>
+
+            <p style="text-align:center; max-width:800px; margin:20px auto; line-height:1.8;">
+                We offer a wide range of lipstick shades including matte, glossy, nude,
+                bold reds, pinks, and browns. Each lipstick ensures long-lasting color
+                with a smooth and comfortable finish.
+            </p>
+
+            <p style="text-align:center; max-width:800px; margin:auto; line-height:1.8;">
+                All GlowUp lipsticks are cruelty-free, dermatologically tested,
+                and suitable for daily wear as well as special occasions.
+                Beauty should be effortless and expressive.
+            </p>
+        </section>
+
+        <!-- BRANDS -->
+        <section id="brands">
+            <h2>Our Lipstick Brands</h2>
+            <div class="logos" style="text-align:center;">
+                <img src="C:\Users\upase\Downloads\lipstick1.jpg" alt="Brand 1">
+                <img src="C:\Users\upase\Downloads\lipstick2.jpg" alt="Brand 2">
+                <img src="C:\Users\upase\Downloads\lipstick3.jpg" alt="Brand 3">
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="products">
+            <h2>Featured Lipsticks</h2>
+
+            <div class="products">
+                <div class="product-card">
+                    <img src="C:\Users\upase\Downloads\fealip1.jpg" alt="Matte Red">
+                    <h4>Matte Red Lipstick</h4>
+                    <p>₹499</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="C:\Users\upase\Downloads\fealip2.jpg" alt="Nude Pink">
+                    <h4>Nude Pink Lipstick</h4>
+                    <p>₹459</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="C:\Users\upase\Downloads\fealip3.jpg" alt="Glossy Rose">
+                    <h4>Glossy Rose Lipstick</h4>
+                    <p>₹529</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="C:\Users\upase\Downloads\fealip4.jpg" alt="Brown Matte">
+                    <h4>Brown Matte Lipstick</h4>
+                    <p>₹489</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <h2>Lipstick Gallery</h2>
+
+            <div class="gallery">
+                <img src="C:\Users\upase\Downloads\gall1.jpg" alt="Gallery 1">
+                <img src="C:\Users\upase\Downloads\lip.jpg" alt="Middle Lipstick">
+                <img src="C:\Users\upase\Downloads\gall3.jpg" alt="Gallery 3">
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+                Name: <input type="text"><br><br>
+                Email: <input type="email"><br><br>
+                Message:<br>
+                <textarea rows="4" cols="30"></textarea><br><br>
+
+                <input type="submit" value="Submit"
+                style="background-color:#d63384;color:white;padding:8px;border:none;">
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2026 GlowUp Lipstick Store</p>
+            <p>Follow us on Instagram 💄</p>
+        </footer>
+    </main>
+
+</body>
+</html>
